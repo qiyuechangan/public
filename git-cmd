@@ -1,0 +1,44 @@
+常用命令：
+
+git init (初始化一个git仓库)
+git add 文件名.后缀 (提交) 
+git commit -m 备注 (确定提交)
+git status (查看当前状态)
+git diff 文件名.后缀 (查看哪些内容被修改了)
+git log (查看提交日志，人物、时间)
+git checkout -- 文件名.后缀 (撤销git add的某个文件)
+git rm 文件名.后缀 ( 'rm a.txt(或手动删除)' => 'git rm a.txt' => 'git commit -m') (文件夹 -r)
+git checkout -- 文件名.后缀 (恢复某个版本)
+git push origin master (确认提交到github上)
+git clone https://github.com@github.com:zhenghuayuan/项目名字.git (github克隆 创建一个文件夹，进去)
+
+github管理
+
+1. ssh-keygen -t rsa -C "526566966@qq.com" (一直回车)
+2. C:\Users\Administrator\ 找到 .ssh文件夹中 id_rsa.pub的内容，复制到github
+3. github => Settings => SSH and GPG kys => 创建SSH key => 填入title => 复制id_rsa.pub的内容到Key框中 => 确定就OK
+4. github 创建一个新项目，项目名记住
+5. 设置信息，首次才需要
+   git config --global user.name "zhenghuayuan"
+   git config --global user.email "526566966@gmail.com"//填写自己的邮箱
+
+5. git remote add origin https://github.com@github.com:zhenghuayuan/项目名字.git (提交不了先执行：git remote rm origin)
+6. 确定提交：git push origin master (需要输入名字，密码)
+
+
+
+var port = 18080;
+
+
+
+ngrok配置：
+官网：https://dashboard.ngrok.com
+获取 authtoken 
+1. 执行ngrok.exe => ngrok authtoken 3aVbghwm9giifzJvSryGJ_5J2kvkF1KGHsfNH4oceEP  (首次)
+2. 执行ngrok.exe => ngrok http 80
+
+
+
+
+
+
